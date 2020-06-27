@@ -1,0 +1,13 @@
+<h1>Artists: </h1> 
+
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= link_to artist.name, artist_path(artist) %> <%= artist.song_count %> song</li>
+  <% end %>  
+</ul> 
+
+<%# index page lists the artists %>
+<%# iterate over all the artist and have a link to their names  %>
+
+<%# lists all of the artist's songs %>
+<%# from the artist.rb we have a count method that we can call, the count of the artists songs  %>
